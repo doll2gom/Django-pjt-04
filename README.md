@@ -9,6 +9,18 @@ PR 머지 본인의 변경사항이 모든 팀원에게 반드시 공유되어�
 브랜치 적극 사용
 
 
-분업
-html 템플릿별로 각자 맡은 파일
-accounts / posts / base.html
+재은:
+1. [Pagination 만들기(index)](https://getbootstrap.com/docs/5.3/components/pagination/)
+댓글 생성, 조회(posts app)(1:n)
+
+정환: 
+1. [이미지 없을 경우 기본이미지](https://cdn.discordapp.com/attachments/1052100074857046036/1098525591193538581/noImg.gif)
+이미지 사이즈 조절(models.py, detail.html)
+자바스크립트 - 좋아요(m:n)
+
+신혜: 
+1. [투표율 표시 (detail/ index) ](https://getbootstrap.com/docs/5.3/components/progress/)
+카테고리 분류(index)
+
+
+
