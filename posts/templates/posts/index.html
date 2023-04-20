@@ -4,13 +4,32 @@
   <div class="container">
     <h1 class="text-center my-3">index</h1>
     <hr>
-    <a href="{% url 'accounts:login' %}" class="btn btn-outline-primary">로그인</a>
-    <a href="{% url 'accounts:signup' %}" class="btn btn-outline-primary">회원가입</a>
-    <form action="{% url 'accounts:logout' %}" method="post">
-      {% csrf_token %}
-      <input type="submit" value="로그아웃" class="btn btn-outline-danger">
-    </form>
+    {% if request.user.is_authenticated %}
+      {{ user }}님 안녕하세요!
+      <form action="{% url 'accounts:logout' %}" method="post">
+        {% csrf_token %}
+        <input type="submit" value="로그아웃" class="btn btn-outline-danger">
+      </form>
+    {% else %}
+      <a href="{% url 'accounts:login' %}" class="btn btn-outline-primary">로그인</a>
+      <a href="{% url 'accounts:signup' %}" class="btn btn-outline-primary">회원가입</a>
+    {% endif %}
     <hr>
-    {{ user }}
+    <table class="table my-5">
+      <thead>
+        <tr class="table-success">
+          <th scope="col">#</th>
+          <th scope="col">주제</th>
+        </tr>
+      </thead>
+      {% for post in posts %}
+      <tbody>
+        <tr onclick="window.location='{% url 'posts:detail' post.pk %}'" style="cursor:pointer;">
+          <th scope="row">{{ post.pk }}</th>
+          <td>{{ post.title }}</td>
+        </tr>
+      </tbody>
+      {% endfor %}
+    </table>
   </div>
 {% endblock body %}
