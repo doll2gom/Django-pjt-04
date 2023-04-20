@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import Post
 from .forms import PostForm
+from django.contrib.auth.decorators import login_required
 # Create your views here.
 
 def init(request):
@@ -22,6 +23,7 @@ def detail(request, posts_pk):
     return render(request, 'posts/detail.html', context)
 
 
+@login_required
 def create(request):
     if request.method == "POST":
         form = PostForm(request.POST, request.FILES)
@@ -38,6 +40,7 @@ def create(request):
     return render(request, 'posts/create.html', context)
 
 
+login_required
 def answer(request, post_pk, select_answer):
     post = Post.objects.get(pk=post_pk)
     if request.user in post.select1_users.all() or request.user in post.select2_users.all():
