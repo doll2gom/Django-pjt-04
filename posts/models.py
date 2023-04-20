@@ -8,7 +8,9 @@ class Post(models.Model):
 
     select1_content = models.CharField(max_length=50)
     select1_users = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='select1_users', blank=True)
+    image1 = models.ImageField(upload_to='photo/%Y/%m/%d/', blank=True)
 
     select2_content = models.CharField(max_length=50)
     select2_users = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='select2_users', blank=True)
+    image2 = models.ImageField(upload_to='photo/%Y/%m/%d/', blank=True)
 
