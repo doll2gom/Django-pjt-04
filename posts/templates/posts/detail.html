@@ -4,6 +4,16 @@
   <div class="container">
     <h1 class="text-center my-3">detail</h1>
     <hr>
-
+    <div>{{post.title}}</div>
+    <form action="{% url 'posts:answer' post.pk 1 %}" method="post">
+      {% csrf_token %}
+      <input type="submit" value="{{ post.select1_content}} - {{post.select1_users.all|length}}"  class="btn btn-outline-primary">
+    </form>
+    <form action="{% url 'posts:answer' post.pk 2 %}" method="post">
+      {% csrf_token %}
+      <input type="submit" value="{{ post.select2_content}} - {{post.select2_users.all|length}}" class="btn btn-outline-primary">
+    </form>
+    <a href="{% url 'posts:index' %}" class="btn btn-outline-primary">뒤로가기</a>
   </div>
 {% endblock body %}
+
