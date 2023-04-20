@@ -1,10 +1,16 @@
 {% extends 'base.html' %}
 {% block title %}index{% endblock title %}
 {% block body %}
-<div class="container">
+  <div class="container">
     <h1 class="text-center my-3">index</h1>
     <hr>
     <a href="{% url 'accounts:login' %}" class="btn btn-outline-primary">로그인</a>
+    <a href="{% url 'accounts:signup' %}" class="btn btn-outline-primary">회원가입</a>
+    <form action="{% url 'accounts:logout' %}" method="post">
+      {% csrf_token %}
+      <input type="submit" value="로그아웃" class="btn btn-outline-danger">
+    </form>
     <hr>
-</div>
+    {{ user }}
+  </div>
 {% endblock body %}
