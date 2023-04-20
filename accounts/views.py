@@ -41,3 +41,6 @@ def signup(request):
     return render(request, 'accounts/signup.html', context)
 
 
+def logout(request):
+    auth_logout(request)
+    return redirect('posts:index')
