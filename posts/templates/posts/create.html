@@ -4,13 +4,12 @@
   <div class="container">
     <h1 class="text-center my-3">create</h1>
     <hr>
-    <form action="{% url 'posts:create' %}" method="post">
+    <form action="{% url 'posts:create' %}" method="post" enctype="multipart/form-data">
       {% csrf_token %}
-      {{ form.as_p }} 
+      {{ form.as_p }}
       <input type="submit" value="등록" class="btn btn-outline-primary">
     </form>
     <a href="{% url 'posts:index' %}" class="btn btn-outline-primary">뒤로가기</a>
-
 
   </div>
 {% endblock body %}
