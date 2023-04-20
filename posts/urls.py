@@ -6,5 +6,5 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('<int:posts_pk>/', views.detail, name='detail'),
     path('create/', views.create, name='create'),
-    path('<int:posts_pk>/answer/<int:answer>/', views.answer, name='answer'),
+    path('<int:post_pk>/answer/<int:select_answer>/', views.answer, name='answer'),
 ]
