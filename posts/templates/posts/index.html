@@ -4,18 +4,6 @@
   <div class="container">
     <h1 class="text-center my-3">index</h1>
     <hr>
-    {% if request.user.is_authenticated %}
-      {{ user }}님 안녕하세요!
-      <form action="{% url 'accounts:logout' %}" method="post">
-        {% csrf_token %}
-        <input type="submit" value="로그아웃" class="btn btn-outline-danger">
-      </form>
-    {% else %}
-      <a href="{% url 'accounts:login' %}" class="btn btn-outline-primary">로그인</a>
-      <a href="{% url 'accounts:signup' %}" class="btn btn-outline-primary">회원가입</a>
-    {% endif %}
-    <hr>
-    <a href="{% url 'posts:create' %}">주제 생성</a>
     <table class="table my-5">
       <thead>
         <tr class="table-success">
@@ -32,5 +20,9 @@
       </tbody>
       {% endfor %}
     </table>
+    <hr>
+    <div class="justify-content-end">
+      <a href="{% url 'posts:create' %}" class="btn btn-outline-success">주제 생성</a>
+    </div>
   </div>
 {% endblock body %}
