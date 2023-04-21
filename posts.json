@@ -4,15 +4,18 @@
     "pk": 1,
     "fields": {
         "user": 1,
-        "title": "Ïä§Ï¶àÎ©î VS Ïä¨Îû®Îç©ÌÅ¨",
-        "select1_content": "Ïä§Ï¶àÎ©îÏùò Î¨∏Îã®ÏÜç",
-        "image1": "photo/2023/04/21/3a684ccaeb7aeac8e3f060ffe7249f7fe039443a_LE6h9d0.jpeg",
-        "select2_content": "Ïä¨Îû®Îç©ÌÅ¨",
-        "image2": "photo/2023/04/21/117210753.1.edit_oDKjtcx.jpg",
+        "title": "",
+        "select1_content": "ƒ°≈≤",
+        "image1": "photo/2023/04/21/112c469dd22b5a9a.jpeg",
+        "select2_content": "««¿⁄",
+        "image2": "photo/2023/04/21/852336a46d9bc933.jpeg",
         "select1_users": [
-            1
+            1,
+            2
         ],
-        "select2_users": []
+        "select2_users": [
+            5
+        ]
     }
 },
 {
@@ -20,13 +23,17 @@
     "pk": 2,
     "fields": {
         "user": 1,
-        "title": "1",
-        "select1_content": "1",
-        "image1": "photo/2023/04/21/photo01.jpeg",
-        "select2_content": "2",
-        "image2": "photo/2023/04/21/photo02.jpeg",
-        "select1_users": [],
-        "select2_users": []
+        "title": "",
+        "select1_content": "¿⁄πŸ",
+        "image1": "",
+        "select2_content": "∆ƒ¿ÃΩ„",
+        "image2": "",
+        "select1_users": [
+            5
+        ],
+        "select2_users": [
+            2
+        ]
     }
 },
 {
@@ -34,11 +41,11 @@
     "pk": 3,
     "fields": {
         "user": 1,
-        "title": "2",
-        "select1_content": "1",
-        "image1": "photo/2023/04/21/photo03.jpeg",
-        "select2_content": "2",
-        "image2": "photo/2023/04/21/photo04.jpeg",
+        "title": "",
+        "select1_content": "1π¯",
+        "image1": "photo/2023/04/21/vslogo.png",
+        "select2_content": "2π¯",
+        "image2": "photo/2023/04/21/girl-g40ec0fb7d_1920.jpg",
         "select1_users": [],
         "select2_users": []
     }
@@ -48,12 +55,14 @@
     "pk": 4,
     "fields": {
         "user": 1,
-        "title": "3",
-        "select1_content": "1",
-        "image1": "photo/2023/04/21/photo05.jpeg",
-        "select2_content": "2",
-        "image2": "photo/2023/04/21/photo06.jpeg",
-        "select1_users": [],
+        "title": "",
+        "select1_content": "¿⁄¿Â∏È",
+        "image1": "",
+        "select2_content": "¬´ªÕ",
+        "image2": "",
+        "select1_users": [
+            5
+        ],
         "select2_users": []
     }
 },
@@ -62,12 +71,14 @@
     "pk": 5,
     "fields": {
         "user": 1,
-        "title": "newjeans1",
-        "select1_content": "1",
-        "image1": "photo/2023/04/21/newjeans.jpeg",
-        "select2_content": "2",
-        "image2": "photo/2023/04/21/newjeans01.jpeg",
-        "select1_users": [],
+        "title": "",
+        "select1_content": "∫Œ∏‘",
+        "image1": "photo/2023/04/21/∫Œ∏‘.jpg",
+        "select2_content": "¬Ô∏‘",
+        "image2": "photo/2023/04/21/¬Ô∏‘.png",
+        "select1_users": [
+            5
+        ],
         "select2_users": []
     }
 },
@@ -76,11 +87,11 @@
     "pk": 6,
     "fields": {
         "user": 1,
-        "title": "newjeans2",
-        "select1_content": "1",
-        "image1": "photo/2023/04/21/newjeans02.jpeg",
-        "select2_content": "2",
-        "image2": "photo/2023/04/21/newjeans03.jpeg",
+        "title": "",
+        "select1_content": "ƒß¬¯∏«",
+        "image1": "photo/2023/04/21/ƒß¬¯∏«.jpeg",
+        "select2_content": "¡÷∆ﬁ",
+        "image2": "photo/2023/04/21/¡÷∆ﬁ.png",
         "select1_users": [],
         "select2_users": []
     }
@@ -90,10 +101,10 @@
     "pk": 7,
     "fields": {
         "user": 1,
-        "title": "newjeans3",
-        "select1_content": "1",
-        "image1": "photo/2023/04/21/newjeans04.jpeg",
-        "select2_content": "2",
+        "title": "",
+        "select1_content": "ª°∞£ªˆ",
+        "image1": "photo/2023/04/21/newjeans06.jpeg",
+        "select2_content": "∆ƒ∂ıªˆ",
         "image2": "photo/2023/04/21/newjeans05.jpeg",
         "select1_users": [],
         "select2_users": []
@@ -104,11 +115,11 @@
     "pk": 8,
     "fields": {
         "user": 1,
-        "title": "newjeans4",
-        "select1_content": "1",
-        "image1": "photo/2023/04/21/newjeans06.jpeg",
-        "select2_content": "2",
-        "image2": "photo/2023/04/21/newjeans07.jpeg",
+        "title": "",
+        "select1_content": "ø¿∏•¬ ",
+        "image1": "photo/2023/04/21/photo01.jpeg",
+        "select2_content": "øﬁ¬ ",
+        "image2": "photo/2023/04/21/photo02.jpeg",
         "select1_users": [],
         "select2_users": []
     }
@@ -118,13 +129,15 @@
     "pk": 9,
     "fields": {
         "user": 1,
-        "title": "newjeans5",
-        "select1_content": "1",
-        "image1": "photo/2023/04/21/newjeans08.jpeg",
-        "select2_content": "2",
-        "image2": "photo/2023/04/21/newjeans09.jpeg",
+        "title": "",
+        "select1_content": "±∏∏ß",
+        "image1": "photo/2023/04/21/photo06.jpeg",
+        "select2_content": "±∏∏ß2",
+        "image2": "photo/2023/04/21/photo05.jpeg",
         "select1_users": [],
-        "select2_users": []
+        "select2_users": [
+            2
+        ]
     }
 },
 {
@@ -132,13 +145,17 @@
     "pk": 10,
     "fields": {
         "user": 1,
-        "title": "Î∂ÄÎ®π VS Ï∞çÎ®π",
-        "select1_content": "Î∂ÄÎ®π",
-        "image1": "photo/2023/04/21/·Ñá·ÖÆ·ÑÜ·Ö•·Ü®.jpg",
-        "select2_content": "Ï∞çÎ®π",
-        "image2": "photo/2023/04/21/·Ñç·Öµ·Ü®·ÑÜ·Ö•·Ü®.png",
-        "select1_users": [],
-        "select2_users": []
+        "title": "",
+        "select1_content": "ƒ´∆‰",
+        "image1": "photo/2023/04/21/photo04.jpeg",
+        "select2_content": "πŸ¥Ÿ",
+        "image2": "photo/2023/04/21/photo03.jpeg",
+        "select1_users": [
+            2
+        ],
+        "select2_users": [
+            5
+        ]
     }
 },
 {
@@ -146,12 +163,15 @@
     "pk": 11,
     "fields": {
         "user": 1,
-        "title": "Ïπ®Ï∞©Îß® VS Ï£ºÌéÑ",
-        "select1_content": "Ïπ®Ï∞©Îß®",
-        "image1": "photo/2023/04/21/·Ñé·Öµ·Ü∑·Ñé·Ö°·Ü®·ÑÜ·Ö¢·Ü´.jpeg",
-        "select2_content": "Ï£ºÌéÑ",
-        "image2": "photo/2023/04/21/·Ñå·ÖÆ·Ñë·Ö•·ÜØ.png",
-        "select1_users": [],
+        "title": "",
+        "select1_content": "ªÍ",
+        "image1": "photo/2023/04/21/photo03_jNlZA09.jpeg",
+        "select2_content": "πŸ¥Ÿ",
+        "image2": "photo/2023/04/21/photo06_v12HFpw.jpeg",
+        "select1_users": [
+            2,
+            5
+        ],
         "select2_users": []
     }
 }

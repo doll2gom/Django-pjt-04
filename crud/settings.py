@@ -148,3 +148,6 @@ MEDIA_URL = '/media/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'accounts.User'
+
+ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ['port-0-django-pjt-04-17xqnr2algq6uqxi.sel3.cloudtype.app']

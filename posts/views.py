@@ -11,7 +11,7 @@ def init(request):
 def index(request):
     posts = Post.objects.order_by('-pk')
     page = request.GET.get('page')
-    paginator = Paginator(posts, 10)
+    paginator = Paginator(posts, 5)
     try:
         post_obj = paginator.get_page(page)
     except PageNotAnInteger:
@@ -59,7 +59,7 @@ def create(request):
     return render(request, 'posts/create.html', context)
 
 
-login_required
+@login_required
 def answer(request, post_pk, select_answer):
     post = Post.objects.get(pk=post_pk)
     if request.user in post.select1_users.all() or request.user in post.select2_users.all():
