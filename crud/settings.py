@@ -39,7 +39,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = True
 
 # ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['port-0-django-pjt-04-17xqnr2algq6uqxi.sel3.cloudtype.app']
+ALLOWED_HOSTS = ['port-0-django-pjt-04-1maxx2algn977pd.sel3.cloudtype.app']
 
 # Application definition
 
