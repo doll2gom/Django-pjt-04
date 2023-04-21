@@ -18,7 +18,7 @@
           </form>
           <hr>
           {% if post.image1 %}
-            <img src="{{ post.image1.url }}" class="card-img-top" alt="image1">
+            <img src="{{ post.image1_thumbnail.url }}" class="card-img-top" alt="image1">
           {% else %}
             <img src="{% static 'posts/noimg.gif' %}" alt="no image">
           {% endif %}
@@ -36,7 +36,7 @@
           </form>
           <hr>
           {% if post.image1 %}
-            <img src="{{ post.image2.url }}" class="card-img-top" alt="image2">
+            <img src="{{ post.image2_thumbnail.url }}" class="card-img-top" alt="image2">
           {% else %}
             <img src="{% static 'posts/noimg.gif' %}" alt="no image">
           {% endif %}
