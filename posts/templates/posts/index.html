@@ -24,13 +24,44 @@
         </tr>
       </thead>
       {% for post in posts %}
-      <tbody>
-        <tr onclick="window.location='{% url 'posts:detail' post.pk %}'" style="cursor:pointer;">
-          <th scope="row">{{ post.pk }}</th>
-          <td>{{ post.title }}</td>
-        </tr>
-      </tbody>
+        <tbody>
+          <tr onclick="window.location='{% url 'posts:detail' post.pk %}'" style="cursor:pointer;">
+            <th scope="row">{{ post.pk }}</th>
+            <td>{{ post.title }}</td>
+          </tr>
+        </tbody>
       {% endfor %}
     </table>
+    <!-- pagination -->
+    {% if page_obj.has_other_pages %}
+      <ul class="pagination justify-content-center">
+
+        {% if post_obj.has_previous %}
+          <li class="page-item">
+            <a href="?page=1" class="page-link">
+              처음으로
+            </a>
+          </li>
+        {% endif %}
+        {% for page in paginator.page_range %}
+          {% if page == post_obj.number %}
+            <li class="page-item">
+              <a class="page-link" href="?page={{ page }}">{{ page }}</a>
+            </li>
+          {% else %}
+            <li class="page-item">
+              <a class="page-link" href="?page={{ page }}">{{ page }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+        {% if post_obj.has_next %}
+          <li class="page-item">
+            <a href="?page={{ post_obj.paginator.num_pages }}" class="page-link">
+              끝으로</a>
+          </li>
+        {% endif %}
+      </ul>
+    {% endif %}
   </div>
+</div>
 {% endblock body %}
