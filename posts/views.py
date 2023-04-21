@@ -2,15 +2,29 @@ from django.shortcuts import render, redirect
 from .models import Post
 from .forms import PostForm, CommentForm
 from django.contrib.auth.decorators import login_required
+from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 # Create your views here.
 
 def init(request):
     return redirect('posts:index')
 
 def index(request):
-    posts = Post.objects.all()
+    posts = Post.objects.order_by('-pk')
+    page = request.GET.get('page')
+    paginator = Paginator(posts, 10)
+    try:
+        post_obj = paginator.get_page(page)
+    except PageNotAnInteger:
+        page = 1
+        post_obj = paginator.get_page(page)
+    except EmptyPage:
+        page = paginator.num_pages
+        post_obj = paginator.get_page(page)
+        
     context = {
-        'posts': posts
+        'posts': post_obj,
+        'paginator': paginator,
+
     }
     return render(request, 'posts/index.html', context)
 
