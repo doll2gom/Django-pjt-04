@@ -11,7 +11,7 @@ def init(request):
 def index(request):
     posts = Post.objects.order_by('-pk')
     page = request.GET.get('page')
-    paginator = Paginator(posts, 5)
+    paginator = Paginator(posts, 10)
     try:
         post_obj = paginator.get_page(page)
     except PageNotAnInteger:
@@ -21,19 +21,10 @@ def index(request):
         page = paginator.num_pages
         post_obj = paginator.get_page(page)
         
-    leftIndex = (int(page) - 2)
-    if leftIndex < 1:
-        leftIndex = 1
-    rightIndex = (int(page) + 2)
-    if rightIndex > paginator.num_pages:
-        rightIndex = paginator.num_pages
-    
-    custom_range = range(leftIndex, rightIndex+1)
     context = {
-        'posts': posts,
-        'post_obj': post_obj,
+        'posts': post_obj,
         'paginator': paginator,
-        'custom_range': custom_range,
+
     }
     return render(request, 'posts/index.html', context)
 
