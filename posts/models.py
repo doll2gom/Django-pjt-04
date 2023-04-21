@@ -24,4 +24,7 @@ class Post(models.Model):
         processors = [SmartResize(1000, 1000)],
         format = 'GIF',
         options = {'quality': 100})
-    
+class Comment(models.Model):
+    post = models.ForeignKey(Post, on_delete=models.CASCADE)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    content = models.CharField(max_length=200)
