@@ -52,7 +52,7 @@
     <form action="{% url 'posts:comment_create' post.pk %}" method="post">
       {% csrf_token %}
       {{ comment_form.as_p }}
-      <input type="submit" value="달기" class="btn btn-outline-primary">
+      <input type="submit" value="댓글" class="btn btn-outline-primary">
     </form>
     <hr>
     <ol class="list-group list-group-numbered">
