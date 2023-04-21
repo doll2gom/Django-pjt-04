@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from .models import Post
-from .forms import PostForm
+from .forms import PostForm, CommentForm
 from django.contrib.auth.decorators import login_required
 # Create your views here.
 
@@ -17,8 +17,13 @@ def index(request):
 
 def detail(request, posts_pk):
     post = Post.objects.get(pk = posts_pk)
+    comment_form = CommentForm()
+    comments = post.comment_set.all()
+    
     context = {
         'post': post,
+        'comments':comments,
+        'comment_form':comment_form,
     }
     return render(request, 'posts/detail.html', context)
 
@@ -52,3 +57,19 @@ def answer(request, post_pk, select_answer):
             post.select2_users.add(request.user)
     return redirect('posts:detail', post_pk )
 
+
+@login_required
+def comment_create(request, post_pk):
+    post = Post.objects.get(pk=post_pk)
+    comment_form = CommentForm(request.POST)
+    if comment_form.is_valid():
+        comment = comment_form.save(commit=False)
+        comment.post = post
+        comment.user = request.user
+        comment.save()
+        return redirect('posts:detail', post.pk)
+    context = {
+        'post1': post,
+        'comment_form': comment_form,
+    }
+    return render(request, 'posts/detail.html', context)

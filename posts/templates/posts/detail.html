@@ -48,6 +48,24 @@
     <div class="d-flex justify-content-end">
       <a href="{% url 'posts:index' %}" class="btn btn-outline-secondary">뒤로가기</a>
     </div>
+    <hr>
+    <form action="{% url 'posts:comment_create' post.pk %}" method="post">
+      {% csrf_token %}
+      {{ comment_form.as_p }}
+      <input type="submit" value="달기" class="btn btn-outline-primary">
+    </form>
+    <hr>
+    <ol class="list-group list-group-numbered">
+      {% for comment in comments %}
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">{{ comment.user }}</div>
+          {{ comment.content }}
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
   </div>
-
 {% endblock body %}
+
+
