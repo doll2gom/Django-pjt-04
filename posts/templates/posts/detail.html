@@ -20,7 +20,11 @@
             <input type="submit" value="{{ post.select1_content }}" class="btn btn-outline-primary">
           </form>
           <hr>
-          <img src="{{ post.image1.url }}" class="card-img-top" alt="image1">
+          {% if post.image1 %}
+            <img src="{{ post.image1.url }}" class="card-img-top" alt="image1">
+          {% else %}
+            <img src="{% static 'posts/noimg.gif' %}" alt="no image">
+          {% endif %}
         </div>
       </div>
       <!-- card2 -->
@@ -34,7 +38,12 @@
             <input type="submit" value="{{ post.select2_content}}" class="btn btn-outline-primary">
           </form>
           <hr>
-          <img src="{{ post.image2.url }}" class="card-img-top" alt="image2">
+          {% if post.image1 %}
+            <img src="{{ post.image2.url }}" class="card-img-top" alt="image2">
+          {% else %}
+            <img src="{% static 'posts/noimg.gif' %}" alt="no image">
+          {% endif %}
+
         </div>
       </div>
     </div>
