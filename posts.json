@@ -1,0 +1,158 @@
+[
+{
+    "model": "posts.post",
+    "pk": 1,
+    "fields": {
+        "user": 1,
+        "title": "스즈메 VS 슬램덩크",
+        "select1_content": "스즈메의 문단속",
+        "image1": "photo/2023/04/21/3a684ccaeb7aeac8e3f060ffe7249f7fe039443a_LE6h9d0.jpeg",
+        "select2_content": "슬램덩크",
+        "image2": "photo/2023/04/21/117210753.1.edit_oDKjtcx.jpg",
+        "select1_users": [
+            1
+        ],
+        "select2_users": []
+    }
+},
+{
+    "model": "posts.post",
+    "pk": 2,
+    "fields": {
+        "user": 1,
+        "title": "1",
+        "select1_content": "1",
+        "image1": "photo/2023/04/21/photo01.jpeg",
+        "select2_content": "2",
+        "image2": "photo/2023/04/21/photo02.jpeg",
+        "select1_users": [],
+        "select2_users": []
+    }
+},
+{
+    "model": "posts.post",
+    "pk": 3,
+    "fields": {
+        "user": 1,
+        "title": "2",
+        "select1_content": "1",
+        "image1": "photo/2023/04/21/photo03.jpeg",
+        "select2_content": "2",
+        "image2": "photo/2023/04/21/photo04.jpeg",
+        "select1_users": [],
+        "select2_users": []
+    }
+},
+{
+    "model": "posts.post",
+    "pk": 4,
+    "fields": {
+        "user": 1,
+        "title": "3",
+        "select1_content": "1",
+        "image1": "photo/2023/04/21/photo05.jpeg",
+        "select2_content": "2",
+        "image2": "photo/2023/04/21/photo06.jpeg",
+        "select1_users": [],
+        "select2_users": []
+    }
+},
+{
+    "model": "posts.post",
+    "pk": 5,
+    "fields": {
+        "user": 1,
+        "title": "newjeans1",
+        "select1_content": "1",
+        "image1": "photo/2023/04/21/newjeans.jpeg",
+        "select2_content": "2",
+        "image2": "photo/2023/04/21/newjeans01.jpeg",
+        "select1_users": [],
+        "select2_users": []
+    }
+},
+{
+    "model": "posts.post",
+    "pk": 6,
+    "fields": {
+        "user": 1,
+        "title": "newjeans2",
+        "select1_content": "1",
+        "image1": "photo/2023/04/21/newjeans02.jpeg",
+        "select2_content": "2",
+        "image2": "photo/2023/04/21/newjeans03.jpeg",
+        "select1_users": [],
+        "select2_users": []
+    }
+},
+{
+    "model": "posts.post",
+    "pk": 7,
+    "fields": {
+        "user": 1,
+        "title": "newjeans3",
+        "select1_content": "1",
+        "image1": "photo/2023/04/21/newjeans04.jpeg",
+        "select2_content": "2",
+        "image2": "photo/2023/04/21/newjeans05.jpeg",
+        "select1_users": [],
+        "select2_users": []
+    }
+},
+{
+    "model": "posts.post",
+    "pk": 8,
+    "fields": {
+        "user": 1,
+        "title": "newjeans4",
+        "select1_content": "1",
+        "image1": "photo/2023/04/21/newjeans06.jpeg",
+        "select2_content": "2",
+        "image2": "photo/2023/04/21/newjeans07.jpeg",
+        "select1_users": [],
+        "select2_users": []
+    }
+},
+{
+    "model": "posts.post",
+    "pk": 9,
+    "fields": {
+        "user": 1,
+        "title": "newjeans5",
+        "select1_content": "1",
+        "image1": "photo/2023/04/21/newjeans08.jpeg",
+        "select2_content": "2",
+        "image2": "photo/2023/04/21/newjeans09.jpeg",
+        "select1_users": [],
+        "select2_users": []
+    }
+},
+{
+    "model": "posts.post",
+    "pk": 10,
+    "fields": {
+        "user": 1,
+        "title": "부먹 VS 찍먹",
+        "select1_content": "부먹",
+        "image1": "photo/2023/04/21/부먹.jpg",
+        "select2_content": "찍먹",
+        "image2": "photo/2023/04/21/찍먹.png",
+        "select1_users": [],
+        "select2_users": []
+    }
+},
+{
+    "model": "posts.post",
+    "pk": 11,
+    "fields": {
+        "user": 1,
+        "title": "침착맨 VS 주펄",
+        "select1_content": "침착맨",
+        "image1": "photo/2023/04/21/침착맨.jpeg",
+        "select2_content": "주펄",
+        "image2": "photo/2023/04/21/주펄.png",
+        "select1_users": [],
+        "select2_users": []
+    }
+}
+]
