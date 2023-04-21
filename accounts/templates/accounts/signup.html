@@ -11,9 +11,9 @@
     <form action="{% url 'accounts:signup' %}" method="POST">
       {% csrf_token %}
       {{ form.as_p }}
-      <input type="submit" value="회원가입" class="btn btn-outline-primary">
+      <input type="submit" value="회원가입" class="btn btn-outline-primary mx-3">
+      <a href="{% url 'posts:index' %}" class="btn btn-outline-secondery mx-3">뒤로가기</a>
     </form>
-    <a href="{% url 'posts:index' %}" class="btn btn-outline-primary">뒤로가기</a>
   </div>
 
 {% endblock body %}
