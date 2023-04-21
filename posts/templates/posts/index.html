@@ -12,12 +12,12 @@
         </tr>
       </thead>
       {% for post in posts %}
-        <tbody>
-          <tr onclick="window.location='{% url 'posts:detail' post.pk %}'" style="cursor:pointer;">
-            <th scope="row">{{ post.pk }}</th>
-            <td>{{ post.title }}</td>
-          </tr>
-        </tbody>
+      <tbody>
+        <tr onclick="window.location='{% url 'posts:detail' post.pk %}'" style="cursor:pointer;">
+          <th scope="row">{{ post.pk }}</th>
+          <td>{{ post.select1_content }} vs {{ post.select2_content }}</td>
+        </tr>
+      </tbody>
       {% endfor %}
     </table>
     <!-- pagination -->
