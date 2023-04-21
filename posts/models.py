@@ -12,10 +12,10 @@ class Post(models.Model):
     select1_users = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='select1_users', blank=True)
     image1 = models.ImageField(upload_to='photo/%Y/%m/%d/', blank=True)
     image1_thumbnail = ImageSpecField(
-        source = 'image1', # 원본 ImageField 명
-        processors = [ResizeToFill(100, 100)], # 처리할 작업목록
-        format = 'GIF', # 최종 저장 포맷
-        options = {'quality': 100}) # 저장 옵션
+        source = 'image1',
+        processors = [ResizeToFill(100, 100)],
+        format = 'GIF',
+        options = {'quality': 100})
 
     select2_content = models.CharField(max_length=50)
     select2_users = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='select2_users', blank=True)
@@ -24,5 +24,5 @@ class Post(models.Model):
         source = 'image2',
         processors = [Thumbnail(100, 100)],
         format = 'GIF',
-        options = {'quality': 200})
+        options = {'quality': 100})
     
