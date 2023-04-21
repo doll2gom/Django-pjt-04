@@ -20,12 +20,26 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-6i_#7=ftvjpgj_%&ch$0%6q1hp6p(rz7z(x0s3sd7p9s5h0a8*'
+# 수정
+import os
+from dotenv import load_dotenv
+
+"""
+load_dotenv()
+.env 파일의 key-value를 프로그램 환경 변수에 등록
+"""
+load_dotenv()
+
+
+"""
+환경 변수에서 key가 SECRET_KEY인 value 불러오기
+"""
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['port-0-django-pjt-04-17xqnr2algq6uqxi.sel3.cloudtype.app']
 
 
 # Application definition
